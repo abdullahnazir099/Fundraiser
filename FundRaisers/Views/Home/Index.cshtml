@@ -1,0 +1,267 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutHome";
+}
+
+<main>
+    <div class="landing-page-section">
+        <div class="main-heading">
+           
+            <h1> Your contribution is important</h1>
+            <a class="cta-btn" asp-area="" asp-controller="Events" asp-action="Index">Donate</a>
+           
+        </div>
+    </div>
+</main>
+
+<section id="about">
+    <div class="about-us">
+        <div class="about-img">
+           
+            <img src="~/css/assets/parallax-03.jpg" alt="img" />
+        </div>
+
+        <div class="about-text">
+            <h3>HOSPITALITY </h3>
+            <h1>THE HOUSE OF HELP</h1>
+
+            <p>
+                When you choose to give, you may not realize that donating to charity will 
+                do more than just help your favourite cause, giving can also provide you with 
+                many personal benefits. Whether you choose to donate to charities supporting people
+                living in poverty, advocating to protect the environment, helping animals in need, 
+                or addressing other global or local problems, charities need your help to continue 
+                their selfless initiatives, but giving can feel just as good as receiving!
+            <p>
+                Life is busy, and it can sometimes be easy to forget to show your gratitude for all
+                that you’ve been given. There are thousands of Canadian charities and causes doing vital 
+                work across the country and around the world. When you are ready to give and are researching 
+                a charity to support, this can remind us of all that we have, and the act of donating to charity
+                is a way to express our feelings gratitude. Inspire others to give by posting your kind action on social
+                media to inspire others to give generously.
+            </p>
+            <p>
+                Helping others feels good. When you donate to a charity that is important to you, you not only help them 
+                continue their vital work, you’re also improving your emotional wellbeing, a win-win situation!
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- --------------------- -------------------------------------------------- -------------------------->
+<!-- --------------------- Events -------------------------->
+<section id="events">
+    <h1>Featured Events</h1>
+    <div class="event-section">
+        <div class="event-cards">
+            <img src="~/css/assets/Medical.jpg" alt="img" height="201" />
+            <h2>Medical</h2>
+            <p>
+                We believe that every patient deserves access to the latest medical technology. Your donation can help us provide medical to needy.
+
+            </p>
+            <div class="donate-blog-btn">
+
+                <a asp-area="" asp-controller="Donors" asp-action="Create" class="cta-btn-card">Donate Now</a>
+            </div>
+        </div>
+        <div class="event-cards">
+
+            <img src="~/css/assets/Education.jpg" alt="img" height="201" />
+            <h2>Education</h2>
+            <p>
+                Empower Little Stars with Education. Help Build Bright Futures for Children & Communities. Your donation can help us provide education to needy.
+            </p>
+            <div class="donate-blog-btn">
+                <a asp-area="" asp-controller="Donors" asp-action="Create" class="cta-btn-card">Donate Now</a>
+            </div>
+        </div>
+        <div class="event-cards">
+
+            <img src="~/css/assets/Emergency.png" alt="img" height="201" />
+            <h2>Emergency</h2>
+            <p>
+                Please give generously. When disaster strikes, our Emergency Response Team works with national Caritas members to get families the help they need fast.
+            </p>
+            <div class="donate-blog-btn">
+                <a asp-area="" asp-controller="Donors" asp-action="Create" class="cta-btn-card">Donate Now</a>
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="event-section">
+        <div class="event-cards">
+            <img src="~/css/assets/Animal.jpg" alt="img" height="201" />
+            <h2>Animal</h2>
+            <p>
+                Your contribution helps to ensure a better life for animals all around the globe. Every donation counts and together, we can change animals lives.
+            </p>
+            <div class="donate-blog-btn">
+                <a asp-area="" asp-controller="Donors" asp-action="Create" class="cta-btn-card">Donate Now</a>
+            </div>
+        </div>
+        <div class="event-cards">
+
+            <img src="~/css/assets/Food.jpg" alt="img" height="201"/>
+            <h2>Food</h2>
+            <p>
+               The Gazette interviewed Broad Leib about the ways in which food donation could help the fight against hunger as well as climate change.
+
+            </p>
+            <div class="donate-blog-btn">
+                <a asp-area="" asp-controller="Donors" asp-action="Create" class="cta-btn-card">Donate Now</a>
+            </div>
+        </div>
+        <div class="event-cards">
+
+            <img src="~/css/assets/Shelter.jpg" alt="img" height="201"/>
+            <h2>Home</h2>
+            <p>
+                Donating to a homeless charity is always a good idea. If you're wondering what homeless charity donations to make, here are the best ones.
+
+            </p>
+            <div class="donate-blog-btn">
+                
+                <a asp-area="" asp-controller="Donors" asp-action="Create" class="cta-btn-card">Donate Now</a>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- --------------------- -------------------------------------------------- -------------------------->
+<!-- --------------------- Testimonals -------------------------->
+<section id="testimonal">
+    <h1>Testimonal</h1>
+
+    <div class="outerdiv">
+        <div class="innerdiv">
+            <!-- div1 -->
+            <div class="div1 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="~/css/assets/profile-1.jpeg" alt="img" />
+                       
+                    </div>
+                    <div class="detbox">
+                        <p class="name">Daniel Clifford</p>
+                        <p class="designation"></p>
+                    </div>
+                </div>
+                <div class="review">
+                    <h4>"Supporting [charity name] has been one of 
+                        the most fulfilling experiences of my life."</h4>
+                    <p>
+                        "I have seen firsthand the incredible impact that [charity name] has on the communities they serve.
+                        From providing food and shelter to supporting education and healthcare, 
+                        this charity is making a real difference in the world. 
+                        I feel privileged to be able to support their important work."
+                    </p>
+                </div>
+            </div>
+            <!-- div2 -->
+            <div class="div2 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="~/css/assets/Profile1.jpg" alt="img" />
+                       
+                    </div>
+                    <div class="detbox">
+                        <p class="name">Jonathan Walters</p>
+                        <p class="designation"></p>
+                    </div>
+                </div>
+                <div class="review">
+                    <h4>I'm proud to be a part of
+                        their important mission</h4>
+                    <p>“I recently donated to [charity name] for the first time,
+                        and I was blown away by how easy the process was.
+                        Not only that, but I received a heartfelt thank you from the organization ”</p>
+                </div>
+            </div>
+            <!-- div3 -->
+            <div class="div3 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="~/css/assets/Profile3.jpg" alt="img" />
+                        
+                    </div>
+                    <div class="detbox">
+                        <p class="name dark">Kira Whittle</p>
+                        <p class="designation dark"></p>
+                    </div>
+                </div>
+                <div class="review dark">
+                    <h4>Such a life-changing experience. Highly recommended!</h4>
+                    <p>
+                        “ When we think of other peoples lives as linked to our own,
+                        our empathy grows. They've demonstrated an amazing ability to 
+                        help build a brighter and better future for our country.
+                        Important to us -- Giving Center pays special attention to the
+                        root causes of challenges our nation faces and addresses these 
+                        in significant and measurable ways.
+
+                        As soon as we think outside of ourselves and work collectively,
+                        we've got the capability to influence the condition of all.
+                        You might have experienced in your own life a time when people
+                        reached out and helped you. ”
+                    </p>
+                </div>
+            </div>
+            <!-- div4 -->
+            <div class="div4 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="~/css/assets/Profile2.jpg" alt="img" />
+                       
+                    </div>
+                    <div class="detbox">
+                        <p class="name dark">Jeanette Harmon</p>
+                        <p class="designation dark"></p>
+                    </div>
+                </div>
+                <div class="review dark">
+                    <h4>An overall wonderful experience</h4>
+                    <p>
+                        "I have been supporting [charity name] for years now,
+                        and I can't say enough about the amazing work they do. 
+                        Their dedication to helping those in need is truly inspiring."
+                    </p>
+                </div>
+            </div>
+            <!-- div5 -->
+            <div class="div5 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="~/css/assets/profile-2.jpeg" alt="img" />
+                        
+                    </div>
+                    <div class="detbox">
+                        <p class="name">Patrick Abrams</p>
+                        <p class="designation"></p>
+                    </div>
+                </div>
+                <div class="review">
+                    <h4>It's inspiring to see the dedication and passion of the volunteers at [charity name].</h4>
+                    <p>
+                        "I was impressed by the transparency and accountability
+                        of [charity name] when I researched charities to support.
+                        Their financial reports and impact data were readily available,
+                        and it was clear that they are using donations effectively and
+                        efficiently to make a difference in the lives of others. I am proud
+                        to support such a well-run and impactful organization."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+
+

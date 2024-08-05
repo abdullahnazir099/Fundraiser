@@ -1,0 +1,43 @@
+﻿@model IEnumerable<FundRaisers.Models.Event>
+@{
+    ViewData["Title"] = "Receiver";
+    Layout = "_LayoutAdmin";
+}
+<main class="content">
+    <h1>Receiver</h1>
+
+    <table id="customers">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Receiver_name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Receiver_phone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fundraise_for)
+                </th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Receiver_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Receiver_phone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Fundraise_for)
+                    </td>
+                
+                
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>

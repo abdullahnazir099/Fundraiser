@@ -1,0 +1,56 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using FundRaisers.Areas.Identity.Data
+
+@inject SignInManager<FundRaisersUser> SignInManager
+@inject UserManager<FundRaisersUser> UserManager
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/FundRaisers.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+    <link rel="stylesheet" href="~/css/main.css" />
+</head>
+<body>
+	<div class="app">
+	<div class="menu-toggle">
+		<div class="hamburger">
+			<span></span>
+		</div>
+	</div>
+
+	<aside class="sidebar">
+		<nav class="menu">
+			<harity><a class="menu-item" asp-area="" asp-controller="Home" asp-action="Index">Charity</a>
+
+		@*<nav class="menu">*@
+				<a class="menu-item" asp-area="" asp-controller="Admin" asp-action="Donor">Donors</a>
+				<a class="menu-item" asp-area="" asp-controller="Admin" asp-action="Receiver">Receiver</a>
+
+				<a class="menu-item" asp-area="" asp-controller="Admin" asp-action="DonorIndex">Donors Management</a>
+		
+				<a class="menu-item" asp-area="" asp-controller="Admin" asp-action="EventIndex">Events Management</a>	
+				
+				<h5>
+					<a 
+						id="logoutForm" class="menu-item" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+						Logout
+					</a>
+				</h5>
+			
+		</nav>
+
+	</aside>
+    <div>
+        @RenderBody()
+    </div>
+	</div>
+</body>
+</html>

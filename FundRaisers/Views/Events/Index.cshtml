@@ -1,0 +1,70 @@
+﻿@model IEnumerable<FundRaisers.Models.Event>
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+@if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+{
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        Changes has been saved. <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="EventIndex">Back to Panel</a>
+
+    </div>
+
+}
+else
+{
+
+    <h1>Events</h1>
+    <hr />
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 col-xs-6 border-primary mb-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-12">
+                            <div class="card-header text-white bg-info">
+                                <p class="card-text">
+                                    <h5 class="card-title">
+                                        @item.Fundraise_for
+                                   
+                                    </h5>
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <p class="card-text">@item.Description</p>
+                                <p class="card-text"><b>Target: </b>@item.Target_amount</p>
+                                <p class="card-text"><b>Recriver: </b>@item.Receiver_name</p>
+                                <p class="card-text"><b>Location: </b>@item.Location</p>
+                                <p class="card-text"><b>Start Date: </b>@item.Date_of_creation.ToString("dd MMMM yyy")</p>
+                           
+                            
+
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card-footer ">
+                                <p class="card-text">
+                                    <a class="btn btn-outline-primary float-right" asp-action="Details" asp-route-id="@item.Id">
+                                        <i class="bi bi-eye-fill"></i> Show Details
+                                    </a>
+                                    <a class="btn btn-outline-primary float-right" asp-controller="Donors" asp-action="Create" asp-route-id="">
+                                        <i class="bi bi-eye-fill"></i> Donate
+                                    </a>
+                               
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+}

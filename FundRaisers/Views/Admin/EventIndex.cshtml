@@ -1,0 +1,78 @@
+﻿@model IEnumerable<FundRaisers.Models.Event>
+
+
+
+@{
+    ViewData["Title"] = "EventIndex";
+    Layout = "_LayoutAdmin";
+}
+
+
+
+<main class="content">
+    <h1>All Events</h1>
+    <table id="customers">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fundraise_for)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Target_amount)
+                </th>
+               
+                <th>
+                    @Html.DisplayNameFor(model => model.Location)
+                </th>
+              
+                <th>
+                    @Html.DisplayNameFor(model => model.Date_of_creation)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Receiver_name)
+                </th>
+              
+                <th>
+                    @Html.DisplayNameFor(model => model.Receiver_phone)
+                </th>
+                <th>
+
+                </th>
+          
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fundraise_for)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Target_amount)
+                </td>
+               
+                <td>
+                    @Html.DisplayFor(modelItem => item.Location)
+                </td>
+              
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date_of_creation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Receiver_name)
+                </td>
+               
+                <td>
+                    @Html.DisplayFor(modelItem => item.Receiver_phone)
+                </td>
+                    <td>
+                      
+                        <a asp-controller="Events" class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Details</a> 
+                        <a asp-controller="Events" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+           
+            </tr>
+    }
+        </tbody>
+    </table>
+</main>

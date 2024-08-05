@@ -1,0 +1,30 @@
+﻿@model IEnumerable<FundRaisers.Models.Donor>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@*<div class="alert alert-success alert-dismissible" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    Changes has been saved. <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Control Panel</a>
+
+</div>*@
+@if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+{
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        Changes has been saved. <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="DonorIndex">Back to Panel</a>
+
+    </div>
+
+}
+else
+{
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        Thank you for your donation. 
+
+    </div>
+    
+}
+
+ 

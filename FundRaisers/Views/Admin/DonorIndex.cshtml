@@ -1,0 +1,87 @@
+﻿@model IEnumerable<FundRaisers.Models.Donor>
+
+@{
+    ViewData["Title"] = "DonorIndex";
+    Layout = "_LayoutAdmin";
+}
+
+
+
+
+<main class="content">
+    <h1>All Donors</h1>
+    <table id="customers">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+              
+               
+                <th>
+                    @Html.DisplayNameFor(model => model.Address)
+                </th>
+               
+                <th>
+                    @Html.DisplayNameFor(model => model.Donation_for)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Card_no)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Date)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Amount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Contact_no)
+                </th>
+                <th>
+
+                </th>
+
+               
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                  
+                    
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                  
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Donation_for)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Card_no)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Amount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Contact_no)
+                    </td>
+                    <td>
+                        
+                        <a asp-controller="Donors" class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                        <a asp-controller="Donors" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+               
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>
+
+

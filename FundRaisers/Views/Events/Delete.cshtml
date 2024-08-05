@@ -1,0 +1,75 @@
+﻿@model FundRaisers.Models.Event
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Event</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Fundraise_for)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Fundraise_for)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Target_amount)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Target_amount)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Zipcode)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Zipcode)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Date_of_creation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Date_of_creation)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Receiver_name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Receiver_name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Receiver_Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Receiver_Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Receiver_phone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Receiver_phone)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-controller="Admin" asp-action="EventIndex">Back to List</a>
+    </form>
+</div>

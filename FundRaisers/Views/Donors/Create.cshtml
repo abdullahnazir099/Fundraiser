@@ -1,0 +1,72 @@
+﻿@model FundRaisers.Models.Donor
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Donate</h1>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contact_no" class="control-label"></label>
+                <input asp-for="Contact_no" class="form-control" />
+                <span asp-validation-for="Contact_no" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Zipcode" class="control-label"></label>
+                <input asp-for="Zipcode" class="form-control" />
+                <span asp-validation-for="Zipcode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Donation_for" class="control-label"></label>
+                <input asp-for="Donation_for" class="form-control" />
+                <span asp-validation-for="Donation_for" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card_no" class="control-label"></label>
+                <input asp-for="Card_no" class="form-control" />
+                <span asp-validation-for="Card_no" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Donate" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@*<div>
+    <a asp-action="Index">View donations</a>
+</div>
+*@
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
