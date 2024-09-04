@@ -550,9 +550,10 @@ C:\Users\Administrator\Desktop\client\FundRaisersLast\FundRaisers\FundRaisers\ob
 C:\Users\Administrator\Desktop\client\FundRaisersLast\FundRaisers\FundRaisers\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Administrator\Desktop\client\FundRaisersLast\FundRaisers\FundRaisers\obj\Debug\net6.0\scopedcss\bundle\FundRaisers.styles.css
 C:\Users\Administrator\Desktop\client\FundRaisersLast\FundRaisers\FundRaisers\obj\Debug\net6.0\scopedcss\projectbundle\FundRaisers.bundle.scp.css
-C:\Users\Administrator\Desktop\client\FundRaisersLast\FundRaisers\FundRaisers\obj\Debug\net6.0\FundRaisers.csproj.CopyComplete
 C:\Users\Administrator\Desktop\client\FundRaisersLast\FundRaisers\FundRaisers\obj\Debug\net6.0\FundRaisers.dll
 C:\Users\Administrator\Desktop\client\FundRaisersLast\FundRaisers\FundRaisers\obj\Debug\net6.0\refint\FundRaisers.dll
 C:\Users\Administrator\Desktop\client\FundRaisersLast\FundRaisers\FundRaisers\obj\Debug\net6.0\FundRaisers.pdb
 C:\Users\Administrator\Desktop\client\FundRaisersLast\FundRaisers\FundRaisers\obj\Debug\net6.0\FundRaisers.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\client\FundRaisersLast\FundRaisers\FundRaisers\obj\Debug\net6.0\ref\FundRaisers.dll
+C:\Users\Administrator\Desktop\client\FundRaisersLast\FundRaisers\FundRaisers\obj\Debug\net6.0\FundRaisers.sourcelink.json
+C:\Users\Administrator\Desktop\client\FundRaisersLast\FundRaisers\FundRaisers\obj\Debug\net6.0\FundRais.561D4054.Up2Date

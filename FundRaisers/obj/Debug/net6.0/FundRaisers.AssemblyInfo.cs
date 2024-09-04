@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FundRaisers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30504e67a6c35e7d6364ad90814a2dda18346c19")]
 [assembly: System.Reflection.AssemblyProductAttribute("FundRaisers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FundRaisers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
